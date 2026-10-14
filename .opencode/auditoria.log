@@ -1,0 +1,576 @@
+﻿2026-10-12 22:59:35 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-12 23:01:28 | shell              | git status
+2026-10-12 23:01:32 | read               | C:/UPB/hooks
+2026-10-12 23:01:39 | read               | C:/UPB/hooks/GUION-HOOKS.md
+2026-10-12 23:01:39 | shell              | git status
+2026-10-12 23:02:33 | read               | C:/UPB/hooks/.claude/hooks/bloquear_comandos.py
+2026-10-13 12:25:58 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 13:10:58 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 13:11:55 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 13:15:24 | shell              | winget --version
+2026-10-13 13:15:41 | shell              | winget install --id Anomaly.OpenCode -e --accept-source-agreements --accept-package-agreements
+2026-10-13 13:15:44 | shell              | winget source list; winget source reset --force
+2026-10-13 13:15:55 | shell              | winget source update --name winget
+2026-10-13 13:16:01 | shell              | winget install --id Anomaly.OpenCode -e --source winget --accept-source-agreements --accept-package-agreements 2>&1
+2026-10-13 13:16:04 | shell              | Get-AppxPackage -Name Microsoft.DesktopAppInstaller | Select-Object Name, Version, Status, InstallLocation | Format-List
+2026-10-13 13:16:17 | shell              | winget search opencode --source winget 2>&1; Write-Output "---exit:$LASTEXITCODE---"
+2026-10-13 13:16:20 | shell              | Get-AppxPackage -Name Microsoft.Winget.Source* | Select-Object Name,Version,Status | Format-List; Get-AppxPackage | Wher
+2026-10-13 13:16:23 | shell              | $p = Get-AppxPackage -Name Microsoft.Winget.Source; $p.InstallLocation; Test-Path $p.InstallLocation
+2026-10-13 13:16:26 | shell              | ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.W
+2026-10-13 13:16:28 | shell              | $mf = "C:\Program Files\WindowsApps\Microsoft.Winget.Source_2026.1002.1729.24_x64__8wekyb3d8bbwe\AppxManifest.xml"; Test
+2026-10-13 13:16:31 | webfetch           | 
+2026-10-13 13:16:33 | execute            | 
+2026-10-13 13:16:36 | execute            | 
+2026-10-13 13:18:38 | write              | C:/Users/LepKore/AppData/Local/Temp/opencode/repair-winget.ps1
+2026-10-13 13:20:43 | shell              | Start-Process powershell -Verb RunAs -Wait -ArgumentList '-NoProfile','-ExecutionPolicy','Bypass','-File','C:\Users\LepK
+2026-10-13 13:20:44 | read               | C:/Users/LepKore/AppData/Local/Temp/opencode/repair-winget.log
+2026-10-13 13:20:47 | shell              | Get-Content C:\Users\LepKore\AppData\Local\Temp\opencode\repair-winget.log
+2026-10-13 13:20:50 | execute            | 
+2026-10-13 13:23:31 | shell              | $u='https://github.com/microsoft/winget-cli/releases/download/v1.29.380/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msix
+2026-10-13 13:23:34 | write              | C:/Users/LepKore/AppData/Local/Temp/opencode/repair2.ps1
+2026-10-13 13:23:46 | shell              | Start-Process powershell -Verb RunAs -Wait -ArgumentList '-NoProfile','-ExecutionPolicy','Bypass','-File','C:\Users\LepK
+2026-10-13 13:23:49 | shell              | Get-Content C:\Users\LepKore\AppData\Local\Temp\opencode\repair2.log -Encoding UTF8
+2026-10-13 13:23:53 | shell              | winget --version; Write-Output "---"; winget source list; Write-Output "---"; Get-AppxPackage -Name Microsoft.DesktopApp
+2026-10-13 13:23:56 | shell              | winget search --id Anomaly.OpenCode -e --source winget --accept-source-agreements 2>&1; Write-Output "exit=$LASTEXITCODE
+2026-10-13 13:24:00 | shell              | winget search opencode --source winget 2>&1 | Select-Object -First 25; Write-Output "exit=$LASTEXITCODE"
+2026-10-13 13:24:06 | shell              | Write-Output "opencode: $((Get-Command opencode -ErrorAction SilentlyContinue).Source)"; winget show --id SST.OpenCodeDe
+2026-10-13 13:25:16 | shell              | winget install --id SST.OpenCodeDesktop -e --source winget --accept-source-agreements --accept-package-agreements 2>&1
+2026-10-13 13:25:20 | shell              | winget list --id SST.OpenCodeDesktop --source winget 2>&1; Write-Output "---"; winget source list
+2026-10-13 13:25:24 | shell              | Remove-Item C:\Users\LepKore\AppData\Local\Temp\opencode\DesktopAppInstaller.msixbundle, C:\Users\LepKore\AppData\Local\
+2026-10-13 13:26:00 | shell              | Get-ChildItem -Recurse -Force -File | Select-Object -First 100 FullName
+2026-10-13 13:26:02 | glob               | **/*guardian*
+2026-10-13 13:26:05 | read               | C:/VSCode/Certi 1/hooks/.opencode/plugins/guardian.js
+2026-10-13 13:26:07 | read               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-13 13:26:07 | read               | C:/VSCode/Certi 1/hooks/.opencode/auditoria.log
+2026-10-13 13:26:12 | shell              | Get-Content ".claude\hooks\proteger_archivos.py"; "=====BLOQUEAR"; Get-Content ".claude\hooks\bloquear_comandos.py"; "==
+2026-10-13 13:26:15 | webfetch           | 
+2026-10-13 13:26:17 | webfetch           | 
+2026-10-13 13:26:20 | webfetch           | 
+2026-10-13 13:26:23 | shell              | Select-String -Path "C:\Users\LepKore\.local\share\opencode\tool-output\tool_1364d0760001vj6rPKfTXxRFDu" -Pattern "execu
+2026-10-13 13:26:25 | read               | C:/Users/LepKore/.local/share/opencode/tool-output/tool_1364d0760001vj6rPKfTXxRFDu
+2026-10-13 13:26:33 | execute            | 
+2026-10-13 13:26:38 | execute            | 
+2026-10-13 13:26:41 | execute            | 
+2026-10-13 13:26:44 | execute            | 
+2026-10-13 13:29:37 | shell              | Get-Item -Path "basura" -ErrorAction SilentlyContinue | Select-Object FullName, Mode; Get-ChildItem -Path "basura" -Recu
+2026-10-13 13:30:13 | shell              | rtk git status -sb; git remote -v; rtk git log --oneline -5
+2026-10-13 13:40:56 | shell              | Get-ChildItem -Force | Select-Object Mode, Name
+2026-10-13 13:40:58 | read               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-13 13:41:03 | shell              | Get-ChildItem -Recurse -Force .claude,.codex,.opencode -File | Select-Object FullName | Format-Table -AutoSize -Wrap
+2026-10-13 13:41:20 | websearch          | 
+2026-10-13 13:41:25 | websearch          | 
+2026-10-13 13:43:55 | webfetch           | 
+2026-10-13 13:43:59 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode" -Force | Select-Object Name; Write-Output "---"; Get-Content "C:\Users
+2026-10-13 13:44:03 | shell              | opencode --version; npm view opencode-pty version exports 2>&1 | Select-Object -First 20
+2026-10-13 13:44:06 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\tui.jsonc"; Write-Output "=== tui.json ==="; Get-Content "C:\Users\LepKor
+2026-10-13 13:44:09 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:44:12 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:44:14 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:44:16 | edit               | C:/Users/LepKore/.config/opencode/tui.jsonc
+2026-10-13 13:44:18 | read               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:45:33 | shell              | Get-ChildItem "$env:USERPROFILE\.cache\opencode\node_modules" -ErrorAction SilentlyContinue | Where-Object Name -like "*
+2026-10-13 13:45:37 | shell              | @("$env:USERPROFILE\.cache\opencode","$env:LOCALAPPDATA\opencode","$env:APPDATA\opencode","$env:USERPROFILE\.local\share
+2026-10-13 13:45:40 | shell              | Get-ChildItem "C:\Users\LepKore\.cache\opencode" -Force | Select-Object Name; Write-Output "=== busqueda pty ==="; Get-C
+2026-10-13 13:45:43 | shell              | Get-ChildItem "C:\Users\LepKore\.cache\opencode\npm","C:\Users\LepKore\.cache\opencode\packages" -ErrorAction SilentlyCo
+2026-10-13 13:45:48 | shell              | Get-ChildItem "C:\Users\LepKore\.cache\opencode\packages","C:\Users\LepKore\.cache\opencode\npm" | Where-Object Name -li
+2026-10-13 13:45:51 | shell              | $p="C:\Users\LepKore\.cache\opencode\npm\opencode-pty@latest"; Get-ChildItem $p -Force | Select-Object Name; if (Test-Pa
+2026-10-13 13:45:54 | shell              | $d="C:\Users\LepKore\.cache\opencode\npm\opencode-pty@latest\1791826014817"; Get-ChildItem $d -Force | Select-Object Nam
+2026-10-13 13:45:57 | shell              | $d="C:\Users\LepKore\.cache\opencode\npm\opencode-pty@latest\1791826014817"; Get-Content "$d\package.json" -Raw | Select
+2026-10-13 13:46:01 | shell              | $p="C:\Users\LepKore\.cache\opencode\npm\opencode-pty@latest\1791826014817\node_modules\opencode-pty"; (Get-Content "$p\
+2026-10-13 13:46:04 | shell              | Get-Process | Where-Object { $_.ProcessName -like "*opencode*" } | Select-Object Id, ProcessName, StartTime | Format-Tab
+2026-10-13 13:50:04 | shell              | $p="C:\Users\LepKore\.cache\opencode\npm\opencode-pty@latest\1791826014817\node_modules\opencode-pty\dist\src\v2"; Get-C
+2026-10-13 13:50:06 | shell              | $p="C:\Users\LepKore\.cache\opencode\npm\opencode-pty@latest\1791826014817\node_modules\opencode-pty\dist\src\v2"; Get-C
+2026-10-13 13:50:08 | shell              | $p="C:\Users\LepKore\.cache\opencode\npm\opencode-pty@latest\1791826014817\node_modules\opencode-pty\dist\src\v2\index.j
+2026-10-13 13:50:13 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:50:16 | read               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:50:20 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:51:07 | shell              | Copy-Item "C:\Users\LepKore\.config\opencode\opencode.jsonc" "C:\Users\LepKore\.config\opencode\opencode.jsonc.bak-pty" 
+2026-10-13 13:51:09 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:51:13 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 13:51:16 | edit               | C:/Users/LepKore/.config/opencode/tui.jsonc
+2026-10-13 13:51:19 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\opencode.jsonc" -TotalCount 30; Write-Output "=== tui.jsonc ==="; Get-Con
+2026-10-13 13:58:45 | shell              | rtk ls -Force; echo "---"; rtk ls -Force .opencode; echo "---"; rtk ls -Force .opencode\plugins; echo "---"; Get-Content
+2026-10-13 13:58:49 | webfetch           | 
+2026-10-13 13:58:51 | webfetch           | 
+2026-10-13 14:00:02 | shell              | opencode --version; echo "---"; Get-Content "$env:USERPROFILE\.config\opencode\opencode.json*" -ErrorAction SilentlyCont
+2026-10-13 14:00:05 | shell              | Get-ChildItem "$env:USERPROFILE\.config\opencode\plugins" | Select-Object Name,Length; echo "---SDK---"; Get-ChildItem "
+2026-10-13 14:00:08 | shell              | Get-Content "$env:USERPROFILE\.config\opencode\plugins\notify-v2.ts"; echo "=====VIBE====="; Get-Content "$env:USERPROFI
+2026-10-13 14:00:14 | shell              | $ErrorActionPreference='SilentlyContinue'; Get-ChildItem -Path "$env:USERPROFILE\.cache\opencode" -Recurse -Depth 4 -Fil
+2026-10-13 14:00:16 | shell              | $d="$env:USERPROFILE\.cache\opencode\packages\opencode-parser\node_modules\@opencode-ai\plugin"; Get-ChildItem $d -Recur
+2026-10-13 14:00:17 | read               | C:/Users/LepKore/.cache/opencode/packages/opencode-parser/node_modules/@opencode-ai/plugin/dist/tui.d.ts
+2026-10-13 14:00:22 | shell              | Get-ChildItem "$env:USERPROFILE\opencode-sidebar-tabs" -Recurse -Include *.ts,*.js -File | Select FullName
+2026-10-13 14:00:25 | shell              | $d="$env:USERPROFILE\.cache\opencode\packages\opencode-parser\node_modules\@opencode-ai\plugin\dist"; Select-String -Pat
+2026-10-13 14:00:28 | shell              | $d="$env:USERPROFILE\.cache\opencode\packages\opencode-parser\node_modules\@opencode-ai\plugin\dist"; (Get-Content "$d\i
+2026-10-13 14:00:32 | shell              | $d="$env:USERPROFILE\.config\opencode\node_modules\@opencode\plugin"; Get-ChildItem $d -Recurse -File | Select FullName;
+2026-10-13 14:00:35 | shell              | $d="$env:USERPROFILE\.config\opencode\node_modules\@opencode\plugin\dist\promise"; Get-ChildItem $d -File | Select Name;
+2026-10-13 14:00:36 | read               | C:/Users/LepKore/.config/opencode/node_modules/@opencode/plugin/dist/promise/plugin.d.ts
+2026-10-13 14:00:39 | shell              | $d="$env:USERPROFILE\.config\opencode\node_modules\@opencode\plugin\dist"; Get-Content "$d\session.d.ts" | Select-Object
+2026-10-13 14:00:42 | shell              | $d="$env:USERPROFILE\.config\opencode\node_modules\@opencode\plugin\dist\promise"; Get-Content "$d\session.d.ts"; echo "
+2026-10-13 14:00:45 | shell              | Get-ChildItem "C:\Users\LepKore\opencode-sidebar-tabs" -File -Force | Select Name; echo "=== src ==="; Get-ChildItem "C:
+2026-10-13 14:00:48 | shell              | Get-Content "C:\Users\LepKore\opencode-sidebar-tabs\src\tui.tsx" | Select-Object -First 90
+2026-10-13 14:00:52 | shell              | Get-ChildItem "C:\VSCode\Certi 1\hooks" -Force | Select Name; echo "=== docs ==="; Get-ChildItem "C:\VSCode\Certi 1\hook
+2026-10-13 14:00:54 | shell              | Get-ChildItem "C:\VSCode\Certi 1\hooks" -Recurse -File -Filter *.md -Depth 2 | ForEach-Object { $_.FullName }
+2026-10-13 14:00:57 | shell              | Get-Content "C:\VSCode\Certi 1\hooks\GUION-HOOKS.md" -TotalCount 80
+2026-10-13 14:01:00 | shell              | Get-Content "C:\Users\LepKore\opencode-sidebar-tabs\src\tui.tsx" | Select-Object -Last 60; echo "=== pkgjson ==="; Get-C
+2026-10-13 14:03:56 | shell              | Write-Output "shell: OK"
+2026-10-13 14:03:58 | read               | C:/VSCode/Certi 1/hooks/.opencode/plugins/guardian.js
+2026-10-13 14:04:02 | glob               | C:/VSCode/Certi 1/hooks/.opencode
+2026-10-13 14:04:06 | grep               | C:/VSCode/Certi 1/hooks/.opencode
+2026-10-13 14:04:08 | webfetch           | 
+2026-10-13 14:04:11 | execute            | 
+2026-10-13 14:04:13 | opencode_models    | 
+2026-10-13 14:04:13 | parse              | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-13 14:04:13 | sequential-thinking_sequentialthinking | 
+2026-10-13 14:04:14 | image-reader_list_images | 
+2026-10-13 14:04:14 | codebase-memory-mcp_list_projects | 
+2026-10-13 14:04:15 | composio_COMPOSIO_SEARCH_SKILLS | 
+2026-10-13 14:04:17 | context7_resolve-library-id | 
+2026-10-13 14:04:17 | execute            | 
+2026-10-13 14:04:20 | execute            | 
+2026-10-13 14:04:22 | write              | C:/Users/LepKore/AppData/Local/Temp/opencode/probe.txt
+2026-10-13 14:04:25 | websearch          | 
+2026-10-13 14:04:27 | websearch          | 
+2026-10-13 14:06:26 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\opencode.jsonc" -Raw
+2026-10-13 14:06:26 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode" -Recurse -Depth 1 | Select-Object FullName, Length
+2026-10-13 14:06:29 | shell              | Get-ChildItem "C:\Users\LepKore\AppData\Local\opencode\log" -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -D
+2026-10-13 14:06:30 | shell              | npm ls -g --depth=0 2>$null; Get-ChildItem "$env:LOCALAPPDATA\opencode\bundle" -ErrorAction SilentlyContinue | Select-Ob
+2026-10-13 14:06:33 | shell              | Get-ChildItem "$env:LOCALAPPDATA\opencode" -Force | Select-Object Name; Get-ChildItem "$env:USERPROFILE\.local\share\ope
+2026-10-13 14:06:35 | shell              | $d="$env:USERPROFILE\.local\share\opencode\log"; Get-ChildItem $d | Sort-Object LastWriteTime -Desc | Select-Object -Fir
+2026-10-13 14:06:39 | shell              | Select-String -Path "$env:USERPROFILE\.local\share\opencode\log\opencode.log" -Pattern "plannotator|submit_plan|question
+2026-10-13 14:06:42 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Select-String -Path $f -Pattern "level=ERROR|level=WARN" |
+2026-10-13 14:06:42 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Select-String -Path $f -Pattern "plannotator|submit_plan" 
+2026-10-13 14:06:46 | shell              | Get-ChildItem "C:\VSCode\Certi 1\hooks" -Force | Select-Object Name; Write-Output "---"; Get-ChildItem "C:\VSCode\Certi 
+2026-10-13 14:06:47 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Select-String -Path $f -Pattern "tool.*question|tool.*subm
+2026-10-13 14:06:50 | shell              | Get-Content "$env:USERPROFILE\.config\opencode\tui.jsonc" -Raw; Write-Output "=== tui.json ==="; Get-Content "$env:USERP
+2026-10-13 14:06:50 | shell              | Get-ChildItem "C:\VSCode\Certi 1\hooks\.opencode" -Recurse -File | Select-Object FullName; Write-Output "---"; Get-Conte
+2026-10-13 14:06:54 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\herdr-tui-session.js" -TotalCount 80
+2026-10-13 14:06:54 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Get-Content $f -Tail 4000 | Select-String -Pattern "ERROR|
+2026-10-13 14:06:58 | shell              | Get-Content "C:\VSCode\Certi 1\hooks\.opencode\plugins\guardian.js" -Raw
+2026-10-13 14:06:59 | shell              | opencode --version; Write-Output "---"; Get-ChildItem "C:\Users\LepKore\.cache\opencode\npm" -ErrorAction SilentlyContin
+2026-10-13 14:07:08 | shell              | Get-ChildItem "C:\Users\LepKore\AppData\Roaming\npm\node_modules\@opencode\cli" -Force -ErrorAction SilentlyContinue | S
+2026-10-13 14:07:08 | shell              | Get-ChildItem "$env:USERPROFILE\.cache\opencode" -Force | Select-Object Name; Get-ChildItem "C:\Program Files\nodejs\nod
+2026-10-13 14:07:12 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\plugins\herdr-agent-state.js" -Raw | Select-Object -First 1
+2026-10-13 14:07:12 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Select-String -Path $f -Pattern 'run=4bbb2f14.*(loading pl
+2026-10-13 14:07:16 | shell              | Get-ChildItem "C:\Users\LepKore\AppData\Roaming\npm\node_modules\@opencode\cli\node_modules" -Force | Select-Object Name
+2026-10-13 14:08:16 | shell              | $b="C:\Users\LepKore\AppData\Roaming\npm\node_modules\@opencode\cli\bin\opencode.exe"; (Get-Item $b).Length; $bytes=[Sys
+2026-10-13 14:08:21 | grep               | C:/Users/LepKore/.config/opencode/plugins
+2026-10-13 14:08:23 | read               | C:/Users/LepKore/.config/opencode/plugins/cbm-augment.ts
+2026-10-13 14:08:28 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Get-Content $f -Tail 800 | Select-String -Pattern "readonl
+2026-10-13 14:08:31 | shell              | Get-Content "C:\Users\LepKore\.local\share\opencode\shell\367393cd6eea1c08626837651e279fd90c379d5d\sh_13672931b001TB4gSd
+2026-10-13 14:08:37 | shell              | Get-ChildItem "C:\Users\LepKore\.cache\opencode\npm\@plannotator\opencode@0.28.8\1791826147236\node_modules\@plannotator
+2026-10-13 14:08:39 | websearch          | 
+2026-10-13 14:08:43 | read               | C:/Users/LepKore/.config/opencode/plugins/rtk.ts
+2026-10-13 14:08:48 | read               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 14:08:56 | grep               | C:/Users/LepKore/.cache/opencode/npm/@plannotator/opencode@0.28.8/1791826147236/node_modules/@plannotator/opencode/dist/
+2026-10-13 14:08:58 | shell              | npm view @opencode/cli versions --json 2>$null | Select-Object -Last 5; Write-Output "--- dist-tag ---"; npm view @openc
+2026-10-13 14:09:05 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\plugins\notify-v2.ts" -TotalCount 60
+2026-10-13 14:09:05 | shell              | "EXPERIMENTAL=$env:OPENCODE_EXPERIMENTAL"; "EVENTSYS=$env:OPENCODE_EXPERIMENTAL_EVENT_SYSTEM"; "PURE=$env:OPENCODE_PURE"
+2026-10-13 14:09:11 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Get-Content $f -Tail 200 | Select-String -Pattern "tool|er
+2026-10-13 14:09:11 | shell              | & "C:\rtk\rtk\rtk.exe" rewrite "git status"; Write-Output "exit=$LASTEXITCODE"; Write-Output "---"; & "C:\rtk\rtk\rtk.ex
+2026-10-13 14:09:18 | shell              | Get-ChildItem "C:\Users\LepKore\.cache\opencode\packages" -Recurse -Depth 2 -ErrorAction SilentlyContinue | Select-Objec
+2026-10-13 14:09:21 | websearch          | 
+2026-10-13 14:09:31 | shell              | $d="C:\Users\LepKore\.config\opencode\node_modules\@opencode\plugin"; Get-ChildItem $d | Select-Object Name; Get-Content
+2026-10-13 14:09:33 | websearch          | 
+2026-10-13 14:09:38 | shell              | git --version
+2026-10-13 14:09:43 | shell              | & "C:\rtk\rtk\rtk.exe" rewrite "git --version"; Write-Output "exit=$LASTEXITCODE"
+2026-10-13 14:09:43 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Select-String -Path $f -Pattern "readonly property" | Sele
+2026-10-13 14:09:52 | shell              | $db="$env:USERPROFILE\.local\share\opencode\opencode.db"; $py = @' import sqlite3, os, json db = os.path.expanduser(r"~\
+2026-10-13 14:09:56 | shell              | $py = @' import sqlite3, os, json db = os.path.expanduser(r"~\.local\share\opencode\opencode.db") c = sqlite3.connect(db
+2026-10-13 14:09:59 | shell              | $py = @' import sqlite3, os, json db = os.path.expanduser(r"~\.local\share\opencode\opencode.db") c = sqlite3.connect(db
+2026-10-13 14:10:02 | shell              | $py = @' import sqlite3, os, json db = os.path.expanduser(r"~\.local\share\opencode\opencode.db") c = sqlite3.connect(db
+2026-10-13 14:10:06 | shell              | $py = @' import sqlite3, os, json db = os.path.expanduser(r"~\.local\share\opencode\opencode.db") c = sqlite3.connect(db
+2026-10-13 14:10:09 | read               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 14:10:13 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\vibeguard.config.json" -Raw
+2026-10-13 14:10:16 | read               | C:/Users/LepKore/.config/opencode/lib/vibeguard/deep.ts
+2026-10-13 14:10:18 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode\lib\vibeguard" | Select-Object Name; Write-Output "--- restoreDeep ---"
+2026-10-13 14:10:23 | grep               | C:/Users/LepKore/.config/opencode/lib/vibeguard/deep.js
+2026-10-13 14:10:25 | read               | C:/Users/LepKore/.config/opencode/lib/vibeguard/deep.js
+2026-10-13 14:10:43 | execute            | 
+2026-10-13 14:10:46 | execute            | 
+2026-10-13 14:10:49 | parse              | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-13 14:10:49 | execute            | 
+2026-10-13 14:10:59 | SUBAGENTE termin├│  | explore
+2026-10-13 14:11:05 | codebase-memory-mcp_list_projects | 
+2026-10-13 14:11:05 | execute            | 
+2026-10-13 14:15:22 | shell              | $a = Get-Content "$env:USERPROFILE\.local\share\opencode\auth.json" -Raw -ErrorAction SilentlyContinue; if($a){ ($a | Co
+2026-10-13 14:15:25 | shell              | try { (Invoke-WebRequest -Uri "http://localhost:11434/v1/models" -TimeoutSec 3).Content } catch { "ollama down: $($_.Exc
+2026-10-13 14:15:34 | codebase-memory-mcp_check_index_coverage | 
+2026-10-13 14:15:34 | execute            | 
+2026-10-13 14:15:39 | shell              | Get-ChildItem "C:\Users\LepKore\AppData\Roaming\npm\node_modules\@opencode\cli\node_modules\@opencode" -Recurse -Depth 2
+2026-10-13 14:15:43 | shell              | $c = Get-Content "C:\Users\LepKore\.config\opencode\opencode.jsonc" -Raw; if($c -match 'space-bunny'){"in global config"
+2026-10-13 14:15:44 | shell              | $m = Get-Content "C:\Users\LepKore\.cache\opencode\models.json" -Raw | ConvertFrom-Json; $m.PSObject.Properties.Name | W
+2026-10-13 14:15:49 | shell              | $m = Get-Content "C:\Users\LepKore\.cache\opencode\models.json" -Raw | ConvertFrom-Json; $p = $m.PSObject.Properties | W
+2026-10-13 14:15:52 | shell              | $m = Get-Content "C:\Users\LepKore\.cache\opencode\models.json" -Raw | ConvertFrom-Json; foreach($p in $m.PSObject.Prope
+2026-10-13 14:15:56 | shell              | $m = Get-Content "C:\Users\LepKore\.cache\opencode\models.json" -Raw | ConvertFrom-Json; $b = $m.'opencode'.models.'spac
+2026-10-13 14:16:03 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --model opencode/space-bunny-free "Reply with exactly: HEADLESS_OK" 2>&1 | Se
+2026-10-13 14:16:12 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "Call the question tool with exactly one question (header 'T', question 'Pick one') a
+2026-10-13 14:16:22 | shell              | cd "C:\VSCode\Certi 1\hooks"; $env:OPENCODE_PURE="1"; $p = "Call the question tool with exactly one question (header 'T'
+2026-10-13 14:16:26 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Get-Content $f -Tail 300 | Select-String -Pattern "loading
+2026-10-13 14:16:34 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "List ONLY the names of every tool available to you, comma-separated, no other text."
+2026-10-13 14:16:40 | shell              | cd "C:\VSCode\Certi 1\hooks"; $env:OPENCODE_PURE="1"; $p = "List ONLY the names of every tool available to you, comma-se
+2026-10-13 14:16:44 | shell              | $f="C:\Users\LepKore\.config\opencode\vibeguard.config.json"; Copy-Item $f "$f.bak-bisect" -Force; (Get-Content $f -Raw)
+2026-10-13 14:16:57 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "Call the question tool with exactly one question (header 'T', question 'Pick one') a
+2026-10-13 14:17:04 | shell              | $f="C:\Users\LepKore\.config\opencode\vibeguard.config.json"; Move-Item "$f.bak-bisect" $f -Force; Select-String -Path $
+2026-10-13 14:17:06 | shell              | $m = Get-Content "C:\Users\LepKore\.cache\opencode\models.json" -Raw | ConvertFrom-Json; $out=@(); foreach($p in $m.PSOb
+2026-10-13 14:17:11 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "Call the question tool with exactly one question (header 'T', question 'Pick one') a
+2026-10-13 14:17:15 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "Call the question tool with exactly one question (header 'T', question 'Pick one') a
+2026-10-13 14:17:21 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "Call the question tool with exactly one question (header 'T', question 'Pick one') a
+2026-10-13 14:17:24 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode models groq 2>&1 | Select-String -NotMatch "CategoryInfo|FullyQualified|opencode.
+2026-10-13 14:17:28 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode models 2>&1 | Select-String -Pattern "^groq/" | Select-Object -First 12
+2026-10-13 14:17:37 | websearch          | 
+2026-10-13 19:37:23 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 20:45:31 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 20:50:07 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 20:59:07 | context7_resolve-library-id | 
+2026-10-13 20:59:07 | execute            | 
+2026-10-13 20:59:13 | context7_query-docs | 
+2026-10-13 20:59:14 | context7_query-docs | 
+2026-10-13 20:59:14 | execute            | 
+2026-10-13 20:59:25 | context7_query-docs | 
+2026-10-13 20:59:26 | context7_query-docs | 
+2026-10-13 20:59:26 | execute            | 
+2026-10-13 20:59:39 | shell              | $d="C:\Users\LepKore\AppData\Local\Temp\opencode\permtest"; New-Item -ItemType Directory -Force -Path $d | Out-Null; '{ 
+2026-10-13 20:59:57 | shell              | cd "C:\Users\LepKore\AppData\Local\Temp\opencode\permtest"; $p = "Call the question tool with exactly one question (head
+2026-10-13 21:00:05 | shell              | Get-Content "C:\Users\LepKore\.config\opencode\service.json" -Raw; Write-Output "--- bin ---"; Get-ChildItem "C:\Users\L
+2026-10-13 21:00:12 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:00:25 | execute            | 
+2026-10-13 21:00:30 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "Call the question tool with exactly one question (header 'T', question 'Pick one') a
+2026-10-13 21:00:37 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:00:38 | shell              | cd "C:\VSCode\Certi 1\hooks"; $p = "Call the question tool with exactly one question (header 'T', question 'Pick one') a
+2026-10-13 21:04:50 | shell              | $d="C:\Users\LepKore\.config\opencode\node_modules\@opencode\plugin"; Get-ChildItem $d\dist -Recurse -File | Select-Obje
+2026-10-13 21:05:01 | read               | C:/Users/LepKore/.config/opencode/node_modules/@opencode/plugin/dist/tool.d.ts
+2026-10-13 21:05:04 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode\node_modules\@opencode\plugin\dist" -Directory | Select-Object FullName
+2026-10-13 21:05:06 | read               | C:/Users/LepKore/.config/opencode/node_modules/@opencode/plugin/dist/promise/tool.d.ts
+2026-10-13 21:05:10 | shell              | Select-String -Path "C:\Users\LepKore\.config\opencode\node_modules\@opencode\plugin\dist\effect\tool.d.ts" -Pattern "ar
+2026-10-13 21:05:20 | edit               | C:/Users/LepKore/.config/opencode/plugins/rtk.ts
+2026-10-13 21:05:20 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:05:27 | edit               | C:/Users/LepKore/.config/opencode/lib/vibeguard/deep.js
+2026-10-13 21:05:32 | edit               | C:/Users/LepKore/.config/opencode/lib/vibeguard/deep.js
+2026-10-13 21:05:32 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:05:40 | read               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 21:05:43 | edit               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 21:05:44 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:05:52 | edit               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 21:05:52 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:05:58 | edit               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 21:05:59 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:06:06 | edit               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 21:06:07 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:06:13 | edit               | C:/Users/LepKore/.config/opencode/plugins/vibeguard-v2.ts
+2026-10-13 21:06:13 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:06:23 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:06:29 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --standalone --model opencode/space-bunny-free "Reply with exactly: PLUGINS_O
+2026-10-13 21:06:39 | shell              | $dirs = @("C:\Users\LepKore\.config\opencode", "C:\VSCode\Certi 1\hooks\.opencode", "C:\VSCode\Certi 1\hooks\.claude", "
+2026-10-13 21:06:45 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Write-Output "=== menciones de pty (con timestamp) ==="; S
+2026-10-13 21:06:52 | shell              | $f="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; Write-Output "=== composio (ultimos) ==="; Select-String -
+2026-10-13 21:06:56 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode mcp --help 2>&1 | Select-String -NotMatch "CategoryInfo|FullyQualified|opencode.e
+2026-10-13 21:07:01 | shell              | $t="C:\Users\LepKore\.config\opencode\tui.json"; $c="C:\Users\LepKore\.config\opencode\cli.json"; Copy-Item $t "$t.bak-d
+2026-10-13 21:07:03 | edit               | C:/Users/LepKore/.config/opencode/tui.json
+2026-10-13 21:07:06 | edit               | C:/Users/LepKore/.config/opencode/cli.json
+2026-10-13 21:07:09 | shell              | foreach($f in @("tui.json","cli.json","opencode.jsonc")){ $p="C:\Users\LepKore\.config\opencode\$f"; try { if($f -eq "op
+2026-10-13 21:07:13 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:07:16 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --standalone --model opencode/space-bunny-free "Reply with exactly: DEDUP_OK"
+2026-10-13 21:07:22 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:07:24 | shell              | rtk git status --short
+2026-10-13 21:07:28 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --standalone --model opencode/space-bunny-free "Use the shell tool to run exa
+2026-10-13 21:22:04 | read               | C:/Users/LepKore/.config/opencode/plugins/cbm-augment.ts
+2026-10-13 21:22:17 | shell              | $payload = '{"hook_event_name":"PreToolUse","tool_name":"Grep","tool_input":{"pattern":"guardian","path":"C:\\VSCode\\Ce
+2026-10-13 21:30:24 | shell              | rtk read "C:\Users\LepKore\.config\opencode\opencode.jsonc"
+2026-10-13 21:30:24 | shell              | rtk ls "C:\Users\LepKore\.config\opencode"; rtk ls "C:\Users\LepKore\.config\opencode\plugin" -ErrorAction SilentlyConti
+2026-10-13 21:30:27 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode" | Select-Object Name; "---PLUGINS---"; Get-ChildItem "C:\Users\LepKore
+2026-10-13 21:30:29 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode\plugins" | Select-Object Name,Length; "---PKG---"; Get-Content "C:\User
+2026-10-13 21:30:33 | websearch          | 
+2026-10-13 21:30:50 | shell              | foreach ($p in @("@tarquinen/opencode-dcp","opencode-parser","@plannotator/opencode","@opencode/plugin","opencode-notify
+2026-10-13 21:30:53 | websearch          | 
+2026-10-13 21:30:54 | context7_resolve-library-id | 
+2026-10-13 21:30:54 | execute            | 
+2026-10-13 21:30:59 | shell              | npm search opencode --json 2>$null | ConvertFrom-Json | Select-Object -First 60 name,version,description | Format-Table 
+2026-10-13 21:31:03 | execute            | 
+2026-10-13 21:31:07 | read               | C:/Users/LepKore/.config/opencode/plugins/rtk.ts
+2026-10-13 21:31:16 | shell              | foreach ($p in @("@playwright/mcp","@modelcontextprotocol/server-sequential-thinking","@modelcontextprotocol/sdk","image
+2026-10-13 21:36:10 | submit_plan        | 
+2026-10-13 21:36:15 | read               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:36:15 | read               | C:/Users/LepKore/.config/opencode/plugins/cbm-augment.ts
+2026-10-13 21:36:42 | shell              | foreach ($p in @("opencode-subagent-statusline","opencode-atuin-history","@sven1103/opencode-worktree-workflow","opencod
+2026-10-13 21:36:53 | shell              | cd C:\Users\LepKore\.config\opencode; foreach ($p in @("opencode-subagent-statusline","opencode-atuin-history","@sven110
+2026-10-13 21:37:11 | shell              | cd C:\Users\LepKore\AppData\Local\Temp\opencode; foreach ($p in @("opencode-subagent-statusline","@sven1103/opencode-wor
+2026-10-13 21:37:13 | shell              | cd C:\Users\LepKore\AppData\Local\Temp\opencode; Get-ChildItem -Recurse -Filter *.tgz | Select-Object -ExpandProperty Fu
+2026-10-13 21:37:48 | execute            | 
+2026-10-13 21:38:21 | execute            | 
+2026-10-13 21:38:27 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:38:30 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:38:34 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:38:37 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:38:40 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:39:22 | shell              | cd C:\Users\LepKore\.config\opencode; npm install @opencode/plugin@2.0.28 --save-exact 2>&1 | Select-Object -Last 5
+2026-10-13 21:39:29 | shell              | $d="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; New-Item -ItemType Directory -Force -Path $d | Out-Null; cd
+2026-10-13 21:40:04 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; foreach ($p in @("opencode-atuin-history@1.0.1","@smart-
+2026-10-13 21:40:09 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; foreach ($n in @("opencode-atuin-history_1.0.1","_smart-
+2026-10-13 21:40:15 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; $targets=@("opencode-atuin-history","@smart-coders-hq/op
+2026-10-13 21:40:22 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; $a=(Get-ChildItem $base -Directory | Where-Object { Test
+2026-10-13 21:40:27 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; $a=(Get-ChildItem $base -Directory | Where-Object { Test
+2026-10-13 21:40:32 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; $m=(Get-ChildItem $base -Directory | Where-Object { Test
+2026-10-13 21:40:35 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; $m=(Get-ChildItem $base -Directory | Where-Object { Test
+2026-10-13 21:40:40 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; $c=(Get-ChildItem $base -Directory | Where-Object { Test
+2026-10-13 21:40:44 | shell              | $base="C:\Users\LepKore\AppData\Local\Temp\opencode\plugcheck"; $w=(Get-ChildItem $base -Directory | Where-Object { Test
+2026-10-13 21:40:57 | shell              | atuin --version 2>&1 | Select-Object -First 2
+2026-10-13 21:41:05 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:41:18 | shell              | cd C:\Users\LepKore\.config\opencode; npm install "opencode-command-hooks@0.8.0" --save-exact 2>&1 | Select-Object -Last
+2026-10-13 21:41:23 | shell              | cd C:\Users\LepKore\.config\opencode; Get-Content package.json; "--- jsonc check ---"; Get-Content opencode.jsonc -Raw |
+2026-10-13 21:41:25 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:41:32 | shell              | cd C:\Users\LepKore\.config\opencode; opencode --version 2>&1 | Select-Object -Last 3
+2026-10-13 21:41:35 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --help 2>&1 | Select-Object -First 5; "--- try load ---"; opencode agent list
+2026-10-13 21:41:39 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --help 2>&1 | Out-Null; opencode debug config 2>&1 | Select-String -Pattern "
+2026-10-13 21:41:41 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode plugin --help 2>&1 | Select-Object -First 12
+2026-10-13 21:41:45 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --log-level warn "responde OK" 2>&1 | Select-Object -Last 25
+2026-10-13 21:41:50 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run --log-level debug "ok" 2>&1 | Select-String -Pattern "plugin" -CaseSensitive:
+2026-10-13 21:41:54 | shell              | cd "C:\VSCode\Certi 1\hooks"; $env:LOG_LEVEL="trace"; opencode run "ok" 2>&1 | Out-File "$env:TEMP\oc.log" -Encoding utf
+2026-10-13 21:41:57 | shell              | $env:TEMP; Get-Content "$env:TEMP\oc.log" | Select-Object -First 30
+2026-10-13 21:47:02 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode run -m ollama/qwen3:8b "responde solo: OK" 2>&1 | Select-Object -Last 20
+2026-10-13 21:47:37 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode debug --help 2>&1 | Select-Object -First 25
+2026-10-13 21:48:17 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode debug config --print-logs 2>&1 | Select-String -Pattern "plugin|SchemaError|comma
+2026-10-13 21:48:34 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode debug agents 2>&1 | Select-Object -First 8; "EXIT=$LASTEXITCODE"
+2026-10-13 21:48:38 | shell              | cd C:\Users\LepKore\.config\opencode; node -e "import('opencode-command-hooks/server').then(m=>{const p=m.default;consol
+2026-10-13 21:50:09 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-13 21:51:10 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode mcp list 2>&1 | Select-Object -Last 20
+2026-10-13 21:51:15 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:51:22 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode mcp list 2>&1 | Select-String "image-reader"
+2026-10-13 21:51:27 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode mcp list 2>&1 | Select-Object -Last 12
+2026-10-13 21:51:38 | shell              | & "C:/Program Files/nodejs/npx.cmd" -y -p image-reader-mcp@1.0.5 image-reader-mcp 2>&1 | Select-Object -First 25
+2026-10-13 21:51:56 | shell              | $d="C:\Users\LepKore\AppData\Local\Temp\opencode\ir"; New-Item -ItemType Directory -Force -Path $d|Out-Null; cd $d; npm 
+2026-10-13 21:52:01 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-13 21:52:37 | shell              | cd "C:\VSCode\Certi 1\hooks"; opencode mcp list 2>&1 | Select-Object -Last 10
+2026-10-13 23:14:25 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode\skills" -Recurse | Select-Object FullName; "---"; Get-Content "C:\Users
+2026-10-13 23:15:35 | question           | 
+2026-10-13 23:15:46 | context7_query-docs | 
+2026-10-13 23:15:46 | execute            | 
+2026-10-13 23:18:34 | submit_plan        | 
+2026-10-13 23:18:46 | shell              | New-Item -ItemType Directory -Force -Path "C:\Users\LepKore\.config\opencode\skills\actualizar-herramientas" | Out-Null;
+2026-10-13 23:19:16 | write              | C:/Users/LepKore/.config/opencode/skills/actualizar-herramientas/SKILL.md
+2026-10-13 23:20:41 | shell              | npm view @plannotator/tui version description 2>&1; "---all versions---"; npm view @plannotator/tui versions --json 2>&1
+2026-10-13 23:20:54 | execute            | 
+2026-10-13 23:21:09 | execute            | 
+2026-10-13 23:21:26 | execute            | 
+2026-10-13 23:21:37 | execute            | 
+2026-10-13 23:21:42 | webfetch           | 
+2026-10-13 23:21:49 | webfetch           | 
+2026-10-13 23:21:56 | execute            | 
+2026-10-13 23:22:06 | shell              | "cargo: " + $(if (Get-Command cargo -EA SilentlyContinue) {"yes"} else {"no"}); "brew: " + $(if (Get-Command brew -EA Si
+2026-10-13 23:22:18 | execute            | 
+2026-10-13 23:26:19 | execute            | 
+2026-10-13 23:26:35 | execute            | 
+2026-10-13 23:26:50 | execute            | 
+2026-10-13 23:26:55 | execute            | 
+2026-10-13 23:27:02 | shell              | Get-ChildItem "C:\Users\LepKore\.local\share\opencode" -Filter "*.db" -EA SilentlyContinue | Select-Object Name,Length,L
+2026-10-13 23:27:12 | shell              | cd C:\Users\LepKore\.config\opencode; sqlite3 --version 2>&1 | Select-Object -First 1
+2026-10-13 23:27:28 | execute            | 
+2026-10-13 23:27:45 | shell              | cd "$env:TEMP"; npm i better-sqlite3 --no-audit --no-fund --silent 2>&1 | Select-Object -Last 2; node -e " const D=requi
+2026-10-13 23:28:09 | write              | C:/Users/LepKore/AppData/Local/Temp/occheck.js
+2026-10-13 23:28:36 | shell              | cd "$env:TEMP"; $js = @' const D = require('better-sqlite3'); const db = new D('C:/Users/LepKore/.local/share/opencode/o
+2026-10-13 23:28:55 | shell              | Get-ChildItem "C:\Users\LepKore\.local\share\opencode" | Select-Object Name,Length | Format-Table -AutoSize; "---journal
+2026-10-13 23:29:24 | shell              | cd "$env:TEMP"; $js=@' const D=require('better-sqlite3'); // Exact replica of what plannotator-tui does: mode=ro then im
+2026-10-13 23:31:34 | execute            | 
+2026-10-13 23:31:51 | execute            | 
+2026-10-13 23:32:05 | execute            | 
+2026-10-13 23:32:21 | execute            | 
+2026-10-13 23:32:30 | execute            | 
+2026-10-13 23:34:28 | submit_plan        | 
+2026-10-13 23:35:27 | compress           | 
+2026-10-13 23:35:50 | compress           | 
+2026-10-13 23:36:06 | compress           | 
+2026-10-13 23:36:30 | shell              | $d="$env:TEMP\plannotator-tui"; New-Item -ItemType Directory -Force -Path $d | Out-Null $base="https://github.com/planno
+2026-10-13 23:36:34 | shell              | $d="$env:TEMP\plannotator-tui" $actual=(Get-FileHash "$d\plannotator-tui.exe" -Algorithm SHA256).Hash.ToLower() $line=Se
+2026-10-13 23:36:38 | shell              | $bin="C:\Users\LepKore\.local\bin"; New-Item -ItemType Directory -Force -Path $bin | Out-Null Copy-Item "$env:TEMP\plann
+2026-10-13 23:36:55 | shell              | $bin="C:\Users\LepKore\.local\bin" $userPath=[Environment]::GetEnvironmentVariable("Path","User") if (($userPath -split 
+2026-10-13 23:37:06 | shell              | $cfg="C:\Users\LepKore\.config\plannotator-tui\config.toml" if (Test-Path $cfg) { "EXISTE, contenido:"; Get-Content $cfg
+2026-10-13 23:37:18 | write              | C:/Users/LepKore/.config/plannotator-tui/config.toml
+2026-10-13 23:37:30 | shell              | $bin="C:\Users\LepKore\.local\bin" & "$bin\plannotator-tui.exe" config
+2026-10-13 23:37:42 | execute            | 
+2026-10-13 23:38:10 | write              | C:/Users/LepKore/AppData/Roaming/plannotator-tui/config.toml
+2026-10-13 23:38:25 | shell              | & "C:\Users\LepKore\.local\bin\plannotator-tui.exe" config
+2026-10-13 23:38:32 | shell              | $p="C:\Users\LepKore\.config\plannotator-tui" if (Test-Path "$p\config.toml") { Remove-Item "$p\config.toml" -Force; "co
+2026-10-13 23:38:42 | shell              | $env:Path="C:\Users\LepKore\.local\bin;$env:Path" $env:PLANNOTATOR_TUI_THEME="dark" cd "C:\VSCode\Certi 1\hooks" plannot
+2026-10-13 23:38:52 | shell              | $env:Path="C:\Users\LepKore\.local\bin;$env:Path" cd "C:\VSCode\Certi 1\hooks" $sid = plannotator-tui last --host openco
+2026-10-13 23:39:05 | shell              | cd "$env:TEMP"; $js=@' const D=require('better-sqlite3'); const db=new D('C:/Users/LepKore/.local/share/opencode/opencod
+2026-10-13 23:39:16 | shell              | $env:Path="C:\Users\LepKore\.local\bin;$env:Path" cd "C:\VSCode\Certi 1\hooks" $out = plannotator-tui last --host openco
+2026-10-13 23:39:38 | shell              | $env:Path="C:\Users\LepKore\.local\bin;$env:Path" $md="$env:TEMP\pt-test.md" Set-Content $md "# Titulo`n`nUn parrafo de 
+2026-10-13 23:39:54 | shell              | $f="$env:USERPROFILE\.plannotator\clients\plannotator-tui\annotations\temp\annotate-pt-test-md-cf10994c\annotations.json
+2026-10-13 23:40:01 | shell              | Remove-Item "$env:TEMP\pt-test.md" -Force -EA SilentlyContinue Remove-Item "$env:TEMP\occheck.js","$env:TEMP\ocj.js","$e
+2026-10-13 23:40:04 | shell              | $t="$env:TEMP\plannotator-tui" if (Test-Path $t) { Get-ChildItem $t | ForEach-Object { Remove-Item $_.FullName -Force };
+2026-10-13 23:45:49 | shell              | $bin="C:\Users\LepKore\.local\bin\plannotator-tui.exe" "--- help: modo interactivo sin terminal ---" cmd /c "echo. | $bi
+2026-10-13 23:46:02 | shell              | $bin="C:\Users\LepKore\.local\bin\plannotator-tui.exe" cd "C:\VSCode\Certi 1\hooks" "--- headless: last --print ---" $bi
+2026-10-13 23:47:27 | shell              | $bin="C:\Users\LepKore\.local\bin\plannotator-tui.exe" cd "C:\VSCode\Certi 1\hooks" "--- last --print con session-id ---
+2026-10-13 23:49:19 | shell              | cd "C:\VSCode\Certi 1\hooks" "=== plannotator en la config ===" Select-String -Path "C:\Users\LepKore\.config\opencode\o
+2026-10-13 23:49:52 | shell              | cd "C:\VSCode\Certi 1\hooks" opencode debug config 2>&1 | Select-String -Pattern "plannotator" -Context 0,4 | Select-Obj
+2026-10-13 23:51:52 | shell              | "--- winpty ---"; if (Get-Command winpty -EA SilentlyContinue) { "disponible" } else { "no instalado" } "--- ConPTY via 
+2026-10-13 23:52:07 | shell              | $p="C:\Users\LepKore\AppData\Local\Temp\opencode\ptycheck" cd $p npm i node-pty --no-audit --no-fund 2>&1 | Select-Strin
+2026-10-13 23:54:14 | read               | C:/Users/LepKore/.config/opencode/skills/actualizar-herramientas/SKILL.md
+2026-10-13 23:54:24 | read               | C:/Users/LepKore/.config/opencode/skills/actualizar-herramientas/SKILL.md
+2026-10-13 23:55:12 | question           | 
+2026-10-13 23:55:23 | submit_plan        | 
+2026-10-13 23:56:27 | submit_plan        | 
+2026-10-13 23:56:43 | read               | C:/Users/LepKore/.config/opencode/skills/actualizar-herramientas/SKILL.md
+2026-10-13 23:56:53 | edit               | C:/Users/LepKore/.config/opencode/skills/actualizar-herramientas/SKILL.md
+2026-10-13 23:57:06 | edit               | C:/Users/LepKore/.config/opencode/skills/actualizar-herramientas/SKILL.md
+2026-10-13 23:57:21 | shell              | $f="C:\Users\LepKore\.config\opencode\skills\actualizar-herramientas\SKILL.md" "lineas: " + (Get-Content $f).Count "--- 
+2026-10-13 23:57:27 | read               | C:/Users/LepKore/.config/opencode/skills/actualizar-herramientas/SKILL.md
+2026-10-14 00:02:43 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-14 00:04:13 | read               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-14 00:04:14 | shell              | opencode mcp list 2>&1 | Out-String
+2026-10-14 00:04:24 | shell              | foreach($b in @("rtk","node","npm","bun","uv","python","rg","atuin","gopls","go","opencode")){ $c=Get-Command $b -ErrorA
+2026-10-14 00:04:38 | shell              | $p=@("@tarquinen/opencode-dcp","opencode-parser","opencode-command-hooks","@plannotator/opencode","image-reader-mcp","@p
+2026-10-14 00:04:42 | shell              | Get-ChildItem "$env:USERPROFILE\.config\opencode\skills" -Directory | ForEach-Object { $f=Join-Path $_.FullName "SKILL.m
+2026-10-14 00:04:42 | shell              | Get-ChildItem "$env:USERPROFILE\.config\opencode" -Directory | Select-Object -ExpandProperty Name; "--- agents ---"; Get
+2026-10-14 00:04:58 | shell              | "--- supermemory refs in config ---"; Select-String -Path "$env:USERPROFILE\.config\opencode\opencode.jsonc","$env:USERP
+2026-10-14 00:05:11 | shell              | Get-Content "$env:USERPROFILE\.config\opencode\command\supermemory-status.md" -TotalCount 20
+2026-10-14 00:18:42 | shell              | cd "$env:USERPROFILE\.config\opencode"; git rev-parse --is-inside-work-tree 2>&1 | Out-String
+2026-10-14 00:18:49 | shell              | $bk="C:\Users\LepKore\AppData\Local\Temp\opencode\tooling-backup-20261014"; New-Item -ItemType Directory -Force -Path $b
+2026-10-14 00:19:14 | shell              | Remove-Item "$env:USERPROFILE\.config\opencode\command\supermemory-init.md" -Force Remove-Item "$env:USERPROFILE\.config
+2026-10-14 00:19:18 | shell              | "--- raiz config ---"; Get-ChildItem "$env:USERPROFILE\.config\opencode" -Directory | Select-Object -ExpandProperty Name
+2026-10-14 00:19:22 | shell              | Select-String -Path "$env:USERPROFILE\.config\opencode\opencode.jsonc","$env:USERPROFILE\.config\opencode\AGENTS.md","$e
+2026-10-14 00:21:40 | shell              | rtk git status; rtk git log --oneline -5; rtk ls
+2026-10-14 00:21:43 | shell              | Get-ChildItem -Recurse -Force -File | Select-Object -ExpandProperty FullName
+2026-10-14 00:21:45 | read               | C:/VSCode/Certi 1/hooks/.opencode/plugins/guardian.js
+2026-10-14 00:21:48 | shell              | Get-Content .opencode\auditoria.log -Tail 20; "---"; opencode --version
+2026-10-14 00:21:51 | shell              | Select-String -Path "$env:USERPROFILE\.config\opencode\opencode.jsonc" -Pattern "plugin|command" -Context 2,6 | Out-Stri
+2026-10-14 00:21:54 | shell              | Get-ChildItem "$env:USERPROFILE\.config\opencode" -Force | Select-Object Mode,Name | Out-String -Width 120 "--- plugin c
+2026-10-14 00:22:05 | shell              | Get-ChildItem "$env:USERPROFILE\.cache\opencode\node_modules" -ErrorAction SilentlyContinue | Select-Object -ExpandPrope
+2026-10-14 00:22:09 | shell              | Get-ChildItem "$env:USERPROFILE\.cache\opencode\npm" -ErrorAction SilentlyContinue -Recurse -Depth 3 | Select-Object -Fi
+2026-10-14 00:22:12 | shell              | $p="$env:USERPROFILE\.config\opencode\node_modules\opencode-command-hooks" Get-Content "$p\package.json" | Out-String -W
+2026-10-14 00:22:16 | shell              | $d="$env:USERPROFILE\.config\opencode\node_modules\opencode-command-hooks\dist" Select-String -Path "$d\config\global.js
+2026-10-14 00:22:19 | shell              | $d="$env:USERPROFILE\.config\opencode\node_modules\opencode-command-hooks\dist" Select-String -Path "$d\config\markdown.
+2026-10-14 00:22:24 | shell              | Get-ChildItem "$env:USERPROFILE\.local\share\opencode" -Recurse -Depth 2 -ErrorAction SilentlyContinue | Select-Object -
+2026-10-14 00:22:27 | shell              | Select-String -Path "$env:USERPROFILE\.local\share\opencode\log\opencode.log" -Pattern "command-hooks|plugin" -SimpleMat
+2026-10-14 00:22:29 | shell              | Get-Content "$env:USERPROFILE\.local\share\opencode\log\opencode.log" -Tail 15 | Out-String -Width 180
+2026-10-14 00:23:28 | question           | 
+2026-10-14 00:23:31 | shell              | $d="$env:USERPROFILE\.config\opencode\node_modules\opencode-command-hooks" Get-Content "$d\README.md" -TotalCount 140 | 
+2026-10-14 00:27:12 | submit_plan        | 
+2026-10-14 00:27:17 | shell              | Copy-Item "$env:USERPROFILE\.config\opencode\opencode.jsonc" "$env:USERPROFILE\.config\opencode\opencode.jsonc.bak-2026-
+2026-10-14 00:27:21 | write              | C:/Users/LepKore/.config/opencode/command-hooks.jsonc
+2026-10-14 00:27:26 | read               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-14 00:27:31 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-14 00:36:33 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-14 00:37:34 | read               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-14 00:37:39 | edit               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-14 00:37:51 | shell              | $cfg="$env:USERPROFILE\.config\opencode" Remove-Item "$cfg\command-hooks.jsonc" -Force -ErrorAction SilentlyContinue Rem
+2026-10-14 00:37:56 | shell              | $p="$env:USERPROFILE\.config\opencode\node_modules\opencode-command-hooks" Get-ChildItem $p -Recurse -File | ForEach-Obj
+2026-10-14 00:38:01 | shell              | $cfg="$env:USERPROFILE\.config\opencode" "--- referencias restantes en config ---" Select-String -Path "$cfg\opencode.js
+2026-10-14 00:38:04 | read               | C:/Users/LepKore/.config/opencode/package.json
+2026-10-14 00:38:10 | edit               | C:/Users/LepKore/.config/opencode/package.json
+2026-10-14 00:38:18 | shell              | $cfg="$env:USERPROFILE\.config\opencode" (Get-Content "$cfg\package-lock.json" -Raw) -replace '(?m)^\s*//.*$' | ConvertF
+2026-10-14 00:38:24 | shell              | $cfg="$env:USERPROFILE\.config\opencode" Get-Content "$cfg\package.json" -Raw | ConvertFrom-Json | Out-Null; "package.js
+2026-10-14 10:37:05 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-14 10:51:34 | shell              | rtk git log --oneline -5; echo ---; rtk git status --short; echo ---; rtk ls
+2026-10-14 10:51:39 | glob               | **/*.{json,jsonc,md,ts,js,py,ps1}
+2026-10-14 10:51:43 | shell              | Get-ChildItem -Recurse -Force -File | Select-Object -ExpandProperty FullName
+2026-10-14 10:51:46 | shell              | $f=@('.opencode/plugins/guardian.js','.claude/settings.json','.codex/hooks.json','.claude/hooks/auditoria.py','.claude/h
+2026-10-14 10:51:49 | shell              | Get-Content .opencode/agents/revisor-codigo.md; "=== depurador ==="; Get-Content .opencode/agents/depurador.md; "=== cod
+2026-10-14 10:51:49 | shell              | Get-Content GUION-HOOKS.md; "=== notas.py ==="; Get-Content proyecto-demo/notas.py; "=== test ==="; Get-Content proyecto
+2026-10-14 11:21:38 | shell              | opencode --version; Get-Command opencode | Format-List Name,Version,Source,CommandType; where.exe opencode
+2026-10-14 11:21:40 | shell              | npm ls -g --depth=0 2>&1; Write-Output "---BUN---"; bun --version 2>&1; Write-Output "---NPM---"; npm --version 2>&1
+2026-10-14 11:21:45 | shell              | npm view @opencode/cli version 2>&1; Write-Output "---ALL---"; npm view @opencode/cli versions --json 2>&1 | Select-Obje
+2026-10-14 11:23:09 | shell              | opencode upgrade 2>&1 | Select-Object -First 40
+2026-10-14 11:23:14 | shell              | opencode --version; npm ls -g @opencode/cli 2>&1 | Select-Object -First 5; Write-Output "---LOGDIR---"; Get-ChildItem "$
+2026-10-14 11:23:18 | shell              | Get-ChildItem "$env:USERPROFILE\.local\share\opencode\log" | Sort-Object LastWriteTime -Descending | Select-Object -Firs
+2026-10-14 11:23:24 | grep               | C:/Users/LepKore/.local/share/opencode/log/opencode.log
+2026-10-14 11:23:28 | shell              | Get-ChildItem "C:\Users\LepKore\AppData\Roaming\npm\node_modules" -Force -Directory | Where-Object {$_.Name -like ".*ope
+2026-10-14 11:23:29 | shell              | Select-String -Path "$env:USERPROFILE\.local\share\opencode\log\opencode.log" -Pattern 'message=upgrade|upgrade.*error|l
+2026-10-14 11:25:41 | submit_plan        | 
+2026-10-14 11:26:09 | shell              | Get-Process -Name opencode* -ErrorAction SilentlyContinue | Select-Object Id,ProcessName; Write-Output "---STALE---"; Ge
+2026-10-14 11:26:11 | shell              | Resolve-DnsName opencode.ai -ErrorAction SilentlyContinue | Select-Object Name,Type,IPAddress | Format-Table -AutoSize; 
+2026-10-14 11:26:16 | shell              | $p="C:\Users\LepKore\AppData\Roaming\npm\node_modules\@opencode\cli"; if(Test-Path "$p\package.json"){ $j=Get-Content "$
+2026-10-14 11:26:17 | shell              | try { $r = Invoke-WebRequest -Uri "https://opencode.ai/api/update?version=2.0.29&target=windows-x64&arch=x64" -UseBasicP
+2026-10-14 11:26:21 | shell              | Get-ChildItem "C:\Users\LepKore\.config\opencode" | Select-Object Name,Length; Write-Output "---JSONC plugin/mcp---"; Se
+2026-10-14 11:26:27 | grep               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-14 11:26:29 | read               | C:/Users/LepKore/.config/opencode/opencode.jsonc
+2026-10-14 11:26:40 | write              | C:/Users/LepKore/.config/opencode/scripts/opencode-upgrade.ps1
+2026-10-14 11:26:44 | shell              | $log="$env:USERPROFILE\.local\share\opencode\log"; $f=Join-Path $log "opencode.log"; $dest=Join-Path $log ("opencode-" +
+2026-10-14 11:26:46 | shell              | powershell -ExecutionPolicy Bypass -File "C:\Users\LepKore\.config\opencode\scripts\opencode-upgrade.ps1" -DryRun 2>&1
+2026-10-14 11:26:50 | shell              | $log="$env:USERPROFILE\.local\share\opencode\log"; $f=Join-Path $log "opencode.log"; $stamp=Get-Date -Format "yyyyMMdd-H
+2026-10-14 11:26:54 | edit               | C:/Users/LepKore/.config/opencode/scripts/opencode-upgrade.ps1
+2026-10-14 11:26:59 | shell              | powershell -ExecutionPolicy Bypass -File "C:\Users\LepKore\.config\opencode\scripts\opencode-upgrade.ps1" -DryRun 2>&1; 
+2026-10-14 11:27:02 | shell              | $errs=$null; $null=[System.Management.Automation.Language.Parser]::ParseFile("C:\Users\LepKore\.config\opencode\scripts\
+2026-10-14 11:27:09 | shell              | $log="$env:USERPROFILE\.local\share\opencode\log\opencode.log"; $before=(Get-Item $log).Length; $null = opencode --versi
+2026-10-14 11:32:25 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-14 11:38:09 | read               | C:/VSCode/Certi 1/hooks/.opencode/plugins/guardian.js
+2026-10-14 11:38:10 | shell              | ls -Recurse "C:\VSCode\Certi 1\hooks\.opencode" | Select-Object FullName
+2026-10-14 11:38:14 | execute            | 
+2026-10-14 11:38:18 | webfetch           | 
+2026-10-14 11:38:23 | webfetch           | 
+2026-10-14 11:38:26 | webfetch           | 
+2026-10-14 11:38:38 | grep               | C:/Users/LepKore/.local/share/opencode/tool-output/tool_13b109952001exEG12Gc05RYaw
+2026-10-14 11:38:42 | read               | C:/Users/LepKore/.local/share/opencode/tool-output/tool_13b109952001exEG12Gc05RYaw
+2026-10-14 11:42:41 | submit_plan        | 
+2026-10-14 11:42:49 | shell              | cd "C:\VSCode\Certi 1\hooks"; Get-Content .opencode\agents\revisor-codigo.md -TotalCount 40; "=== GENERADOR ==="; Get-Co
+2026-10-14 11:42:49 | shell              | cd "C:\VSCode\Certi 1\hooks"; Get-ChildItem -Force | Select-Object Mode,Name; "---"; Get-ChildItem -Recurse -Depth 2 -Di
+2026-10-14 11:43:05 | shell              | cd "C:\VSCode\Certi 1\hooks"; Get-ChildItem -Recurse .claude,.codex -File | Select-Object FullName; "--- proyecto-demo -
+2026-10-14 11:52:57 | submit_plan        | 
+2026-10-14 11:53:01 | read               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 11:53:01 | read               | C:/VSCode/Certi 1/hooks/proyecto-demo/notas.py
+2026-10-14 11:53:17 | write              | C:/VSCode/Certi 1/hooks/.opencode/plugins/guardian.js
+2026-10-14 11:53:17 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-14 11:53:21 | guardian_audit     | 
+2026-10-14 11:53:21 | execute            | 
+2026-10-14 11:53:27 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 11:53:30 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:07:26 | PLUGIN cargado     | guardian.js est├í activo
+2026-10-14 12:10:19 | execute            | 
+2026-10-14 12:10:21 | opencode_models    | 
+2026-10-14 12:10:21 | execute            | 
+2026-10-14 12:19:58 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:20:01 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:20:04 | grep               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:20:07 | read               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:20:11 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:26:25 | skill              | 
+2026-10-14 12:26:28 | webfetch           | 
+2026-10-14 12:26:28 | webfetch           | 
+2026-10-14 12:26:30 | webfetch           | 
+2026-10-14 12:26:32 | webfetch           | 
+2026-10-14 12:26:35 | webfetch           | 
+2026-10-14 12:26:37 | webfetch           | 
+2026-10-14 12:26:37 | shell              | Get-Content "$env:USERPROFILE\.config\opencode\cli.json" -ErrorAction SilentlyContinue
+2026-10-14 12:26:40 | webfetch           | 
+2026-10-14 12:26:41 | websearch          | 
+2026-10-14 12:26:46 | webfetch           | 
+2026-10-14 12:26:54 | compress           | 
+2026-10-14 12:27:12 | read               | C:/VSCode/Certi 1/hooks/.claude/settings.json
+2026-10-14 12:27:12 | webfetch           | 
+2026-10-14 12:27:15 | webfetch           | 
+2026-10-14 12:27:17 | shell              | $f="C:\Users\LepKore\.local\share\opencode\tool-output\tool_13b3d4cbc0014UQs60LtM9ff9u"; (Get-Item $f).Length
+2026-10-14 12:27:34 | grep               | C:/Users/LepKore/.local/share/opencode/tool-output/tool_13b3d4cbc0014UQs60LtM9ff9u
+2026-10-14 12:27:39 | shell              | $f="C:\Users\LepKore\.local\share\opencode\tool-output\tool_13b3d4cbc0014UQs60LtM9ff9u"; $t=Get-Content $f -Raw; foreach
+2026-10-14 12:30:59 | question           | 
+2026-10-14 12:31:07 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:09 | read               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:11 | read               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:14 | read               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:19 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:22 | shell              | cd "C:\VSCode\Certi 1\hooks"; Select-String -Path GUION-HOOKS.md -Pattern '^(---|### Hook nuevo)' | ForEach-Object { "$(
+2026-10-14 12:31:26 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:28 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:30 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:33 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:35 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:36 | execute            | 
+2026-10-14 12:31:37 | edit               | C:/VSCode/Certi 1/hooks/GUION-HOOKS.md
+2026-10-14 12:31:38 | execute            | 
+2026-10-14 12:41:54 | execute            | 
+2026-10-14 12:41:56 | shell              | Select-String -Path "C:\Users\LepKore\AppData\Local\Temp\opencode\**\*.log" -Pattern "parse" -SimpleMatch -List -ErrorAc
+2026-10-14 12:42:00 | grep               | C:/VSCode/Certi 1/hooks/.opencode
+2026-10-14 12:42:02 | read               | C:/VSCode/Certi 1/hooks/.opencode/auditoria.log
+2026-10-14 12:43:17 | glob               | C:\Users\LepKore\Downloads\*.pdf
+2026-10-14 12:43:19 | shell              | Get-ChildItem "C:\Users\LepKore\Downloads" -Filter *.pdf | Select-Object Name, Length, LastWriteTime | Format-Table -Aut
+2026-10-14 12:43:21 | parse              | C:/Users/LepKore/Downloads/LAB VPN.pdf
+2026-10-14 12:43:21 | execute            | 
+2026-10-14 12:57:42 | shell              | git remote add ivan https://github.com/LepKore/hooks-Ivan.git; git remote -v
+2026-10-14 12:59:10 | shell              | rtk git fetch ivan; rtk git branch -r
+2026-10-14 12:59:14 | shell              | rtk git status -sb; rtk git log --oneline -3; rtk git log --oneline -3 ivan/main
+2026-10-14 12:59:17 | shell              | git merge ivan/main --no-edit
+2026-10-14 12:59:21 | shell              | rtk git stash push -m "wip auditoria" -- .opencode/auditoria.log; git merge ivan/main --no-edit
+2026-10-14 12:59:26 | shell              | rtk git stash pop; rtk git status -sb
+2026-10-14 12:59:30 | shell              | rtk git stash list; (Get-Content .opencode/auditoria.log -Tail 5)
+2026-10-14 12:59:33 | shell              | rtk git show stash@{0} --stat
+2026-10-14 12:59:36 | shell              | git show 'stash@{0}':'.opencode/auditoria.log' | Out-File -Encoding utf8 tmp_aud.txt; (Get-Content tmp_aud.txt).Count; (
+2026-10-14 12:59:40 | shell              | git --no-pager show "stash@{0}:.opencode/auditoria.log" > tmp_aud.txt; (Get-Content tmp_aud.txt).Count
+2026-10-14 12:59:44 | shell              | $old = Get-Content tmp_aud.txt; $new = Get-Content .opencode/auditoria.log; Set-Content -Path .opencode/auditoria.log -V
